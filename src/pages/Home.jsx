@@ -1,9 +1,12 @@
 import React from "react";
 
+import Snail from './Snail';
+
+
 const Home = () => {
   return (
-    <div>
-      <p>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p>
+    <div className="home-element">
+      <Snail/>
     </div>
   );
 };
