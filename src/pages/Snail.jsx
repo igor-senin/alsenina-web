@@ -16,19 +16,23 @@ const Snail = () => {
   const [style, setStyle] = useState({
     position: "absolute",
     left: 0,
-    top: 0
+    top: 0,
+    width: 500
   });
 
   const updatePos = (newX, newY) => {
-    // setStyle({left: newX, top: newY});
+    setStyle({
+      position: "absolute",
+      left: newX,
+      top: newY,
+      width: 500
+    });
 
-    // console.log("updatePos");
+    console.log("updatePos");
   };
 
   return (
-  <div
-      // style={style}
-    >
+  <div style={style}>
     <ImageSequence
         data={imgs}
         velocities={vels}
