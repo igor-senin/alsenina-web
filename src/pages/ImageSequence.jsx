@@ -55,18 +55,20 @@ const ImageSequence = (
 
     const intervalId = setInterval(() => {
       setIndex((prevIndex) => (prevIndex + 1) % imgPaths.length);
-      setPosition((prevPos) => [
-        prevPos[0] + velocity[0],
-        prevPos[1] + velocity[1]
-      ]);
-
-      setPos(position[0], position[1]);
+      setPosition((prevPos) => {
+        const newPos = [
+          prevPos[0] + velocity[0],
+          prevPos[1] + velocity[1]
+        ];
+        setPos(newPos[0], newPos[1]);
+        return (newPos);
+      });
     }, 1000 / fps);
 
     return () => {
       clearInterval(intervalId);
     };
-  }, [index, position, imgPaths]);
+  }, [index, position, imgPaths, fps]);
 
   useEffect(() => {
     loadImages(data);
