@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'NeueMachina-Ultrabold';
+  src: url('../../resources/Fonts/neue-machina-ultrabold.ttf');
+}
+
+@font-face {
+  font-family: 'GeometriaMedium';
+  src: url('../../resources/Fonts/geometria-medium.otf');
+}
+
+.home-element {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.snail-container {
+  height: 100px;
+}
