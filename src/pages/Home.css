@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'NeueMachina-Ultrabold';
-  src: url('../../resources/Fonts/neue-machina-ultrabold.ttf');
+  src: url('../../public/resources/Fonts/neue-machina-ultrabold.ttf');
 }
 
 @font-face {
   font-family: 'GeometriaMedium';
-  src: url('../../resources/Fonts/geometria-medium.otf');
+  src: url('../../public/resources/Fonts/geometria-medium.otf');
 }
 
 .home-element {
@@ -13,6 +13,8 @@
   padding: 0;
   height: 100%;
   width: 100%;
+
+  background-color: #fcf7ec;
 }
 
 .snail-container {

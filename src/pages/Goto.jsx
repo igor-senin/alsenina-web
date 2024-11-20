@@ -1,12 +1,18 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import './Goto.css';
 
-const Goto = ({title}) => {
+const Goto = ({title, pathTo}) => {
+  const path = `/${pathTo}`;
   return (
-    <div className="goto">
-      {title}
-    </div>
+    <Link to={path} style={{textDecoration: 'none'}}>
+      <button
+        className="goto"
+      >
+        {title}
+      </button>
+    </Link>
   );
 };
 

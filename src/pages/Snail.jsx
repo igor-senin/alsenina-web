@@ -8,7 +8,7 @@ const imgs = [];
 const vels = [];
 
 for (let i = 1; i <= 26; ++i) {
-  imgs.push(require(`../../resources/Animation_snail/Snail-${i}.png`));
+  imgs.push(require(`../../public/resources/Animation_snail/Snail-${i}.png`));
   vels.push([i <= 15 ? 0.0 : 6.7, 0.0]);
 }
 
@@ -32,8 +32,8 @@ const Snail = () => {
       width: width,
       height: height
     });
-
-    console.log("updatePos");
+    //
+    // console.log("updatePos");
   };
 
   return (

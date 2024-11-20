@@ -13,11 +13,15 @@ const Home = () => {
         <Snail/>
       </div>
       <div className="navbar">
-        <Goto title={"Анимация"}/>
-        <Goto title={"Иллюстрация"}/>
-        <Goto title={"Опыт"}/>
-        <Goto title={"Контакты"}/>
+        <Goto title={"Анимация"} pathTo={"animation"}/>
+        <Goto title={"Иллюстрация"} pathTo={"illustration"}/>
+        <Goto title={"Опыт"} pathTo={"experience"}/>
+        <Goto title={"Контакты"} pathTo="contacts"/>
       </div>
+      <img
+        src="resources/First_page_illustration.png"
+        width="100%"
+      />
     </div>
   );
 };
