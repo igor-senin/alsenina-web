@@ -20,3 +20,17 @@
 .snail-container {
   height: 100px;
 }
+
+img {
+  user-select: none;
+}
+
+.main-image-container {
+  padding-top: 80px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.copyright {
+  height: 50px;
+}

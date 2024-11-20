@@ -18,10 +18,15 @@ const Home = () => {
         <Goto title={"Опыт"} pathTo={"experience"}/>
         <Goto title={"Контакты"} pathTo="contacts"/>
       </div>
-      <img
-        src="resources/First_page_illustration.png"
-        width="100%"
-      />
+      <div className="main-image-container">
+        <img
+          src="resources/First_page_illustration.png"
+          width="40%"
+        />
+      </div>
+      <div className="copyright">
+        COPYRIGHT
+      </div>
     </div>
   );
 };

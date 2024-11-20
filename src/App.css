@@ -1,6 +1,6 @@
 .App, #root {
   height: 100%;
-  cursor: url("../public/Regular.png"), auto;
+  /* cursor: url("../public/Regular.png"), auto; */
 }
 
 .App:active {
