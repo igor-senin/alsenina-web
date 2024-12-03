@@ -13,6 +13,7 @@
   padding: 0;
   height: 100%;
   width: 100%;
+  padding-top: 75px;
 
   background-color: #fcf7ec;
 }
@@ -27,10 +28,31 @@ img {
 
 .main-image-container {
   padding-top: 80px;
-  display: flex;
-  justify-content: space-around;
+}
+
+.main-image {
+  height: 1023px;
 }
 
 .copyright {
+  margin: 50px;
+
+  display: flex;
   height: 50px;
+
+  font-size: 15px;
+}
+
+.real-copyright {
+  width: 50%;
+  font-family: 'NeueMachina-Ultrabold';
+  
+  text-align: center;
+}
+
+.bottom-links {
+  width: 50%;
+  font-family: 'NeueMachina-Ultrabold';
+
+  text-align: center;
 }

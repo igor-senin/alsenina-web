@@ -1,0 +1,78 @@
+.animation-page {
+  background-color: #fcf7ec;
+
+  padding-left: 0px;
+  display: grid;
+  grid-template-columns: 270px 1fr 270px;
+
+  padding-bottom: 400px;
+
+  position: relative;
+}
+
+.concrete-img-1_2,
+.concrete-img-3,
+.concrete-img-4 {
+  /* position: absolute; */
+  /* height: 500px; */
+}
+
+.concrete-img-1_2 {
+  height: 800px;
+}
+
+.concrete-img-3 {
+  height: 800px;
+}
+
+.concrete-img-4 {
+  height: 800px;
+}
+
+.elements-1_2,
+.element-3,
+.element-4 {
+  position: absolute;
+  height: 1000px;
+}
+
+.element-1_2 {
+  top: 0;
+  left: 100px;
+}
+
+.element-3 {
+  top: 600px;
+  left: 50px
+}
+
+.element-4 {
+  bottom: 0;
+  right: 500px;
+}
+
+.animation-header {
+  height: 40px;
+  padding: 30px;
+  padding-left: 0px;
+
+  font-family: 'NeueMachina-Ultrabold';
+  font-size: 50px;
+}
+
+.projects-list-part {
+}
+
+.projects-list {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.left-empty-space {
+  position: relative;
+}
+
+.right-empty-space {
+  position: relative;
+}

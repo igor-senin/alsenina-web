@@ -1,31 +1,33 @@
 import React from "react";
 
-import Snail from './Snail';
 import Goto from './Goto';
+import Navbar from './Navbar';
 
 import './Home.css';
-import './Navbar.css';
 
 const Home = () => {
+  const main_image = require('../assets/first_page.png');
+
   return (
     <div className="home-element">
-      <div className="snail-container">
-        <Snail/>
-      </div>
-      <div className="navbar">
-        <Goto title={"Анимация"} pathTo={"animation"}/>
-        <Goto title={"Иллюстрация"} pathTo={"illustration"}/>
-        <Goto title={"Опыт"} pathTo={"experience"}/>
-        <Goto title={"Контакты"} pathTo="contacts"/>
-      </div>
+      <Navbar/>
       <div className="main-image-container">
         <img
-          src="resources/First_page_illustration.png"
-          width="40%"
+          className="main-image"
+          src={main_image}
         />
       </div>
       <div className="copyright">
-        COPYRIGHT
+        <div className="real-copyright">
+          COPYRIGHT 2024 - Alina Senina
+        </div>
+        <div className="bottom-links">
+          <Goto title={"Projects"} pathTo={"projects"} fontSize="15px"/>
+          |
+          <Goto title={"Experience"} pathTo={"experience"} fontSize="15px"/>
+          |
+          <Goto title={"Contacts"} pathTo={"contacts"} fontSize="15px"/>
+        </div>
       </div>
     </div>
   );

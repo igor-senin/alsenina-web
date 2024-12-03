@@ -14,5 +14,5 @@
 .goto:hover {
   opacity: 0.5;
 
-  cursor: url("../../public/Regular.png"), auto;
+  /* cursor: url("../../public/Regular.png"), auto; */
 }

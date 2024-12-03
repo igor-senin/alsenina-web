@@ -10,14 +10,14 @@ const ImageSequence = (
   {
     data=[],
     velocities=[],
-    fps = 60,
+    fps = 10,
     canvasWidth = 300,
     canvasHeight = 300,
     setPos
   }
 ) => {
   const canvasRef = useRef(null);
-  const [imgPaths, setImgPaths] = useState([]);
+  const [imgsPaths, setImgsPaths] = useState(null);
   const [index, setIndex] = useState(0);
   const [position, setPosition] = useState([0, 0]);
 
@@ -28,13 +28,13 @@ const ImageSequence = (
     if (list.length === 0) {
       return;
     }
-    const all = [];
-    list.forEach((v) => {
+    const all = new Map();
+    list.forEach((v, idx) => {
       const img = new Image();
       img.onload = function() {
-        all.push(img);
-        if (all.length === list.length) {
-          setImgPaths(all);
+        all.set(idx, img);
+        if (all.size === list.length) {
+          setImgsPaths(all);
         }
       };
       img.src = v;
@@ -42,7 +42,7 @@ const ImageSequence = (
   };
 
   useEffect(() => {
-    if (imgPaths.length === 0 || !imgPaths[index]) {
+    if (!imgsPaths || imgsPaths.size === 0 || !imgsPaths.get(index)) {
       return;
     }
     const velocity = velocities && velocities.length >= index
@@ -51,10 +51,10 @@ const ImageSequence = (
     const canvas = canvasRef.current;
     const ctx = canvas.getContext('2d');
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.drawImage(imgPaths[index], 0, 0, canvas.width, canvas.height);
+    ctx.drawImage(imgsPaths.get(index), 0, 0, canvas.width, canvas.height);
 
     const intervalId = setInterval(() => {
-      setIndex((prevIndex) => (prevIndex + 1) % imgPaths.length);
+      setIndex((prevIndex) => (prevIndex + 1) % imgsPaths.size);
       setPosition((prevPos) => {
         const newPos = [
           prevPos[0] + velocity[0],
@@ -68,7 +68,7 @@ const ImageSequence = (
     return () => {
       clearInterval(intervalId);
     };
-  }, [index, position, imgPaths, fps]);
+  }, [index, position, imgsPaths, fps]);
 
   useEffect(() => {
     loadImages(data);
