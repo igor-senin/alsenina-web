@@ -1,0 +1,69 @@
+.animation-page {
+  background-color: #fcf7ec;
+
+  padding-left: 0px;
+  display: grid;
+  grid-template-columns: 270px 1fr 270px;
+
+  padding-bottom: 400px;
+
+  position: relative;
+}
+
+img {
+  position: absolute;
+  height: 400px;
+}
+
+.img-1 {
+  left: 50px;
+  top: 0;
+}
+
+.img-2 {
+  right: 250px;
+  top: 0;
+}
+
+.img-3 {
+  height: 100px;
+  right: 350px;
+  top: 0;
+}
+
+.img-4 {
+  left: 50px;
+  top: 600px;
+}
+
+.img-5 {
+  height: 250px;
+  bottom: 0;
+  right: 500px;
+}
+
+.animation-header {
+  height: 40px;
+  padding: 30px;
+  padding-left: 0px;
+
+  font-family: 'NeueMachina-Ultrabold';
+  font-size: 50px;
+}
+
+.projects-list-part {
+}
+
+.projects-list {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.left-empty-space {
+  position: relative;
+}
+
+.right-empty-space {
+  position: relative;
+}

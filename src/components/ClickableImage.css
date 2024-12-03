@@ -1,0 +1,33 @@
+.clickable-image-container {
+  height: 275px;
+  width: 275px;
+  
+  transition: 0.5s;
+
+  cursor: none;
+
+  margin: 10px;
+}
+
+.clickable-image-container:hover {
+  opacity: 0.78;
+  cursor: none;
+}
+
+/* .clickable-image-container:active { */
+/*   height: 300px; */
+/*   width: 300px; */
+/*   cursor: none; */
+/* } */
+
+@keyframes image_animation {
+  from { height: 375px; }
+  to { height: 350px; }
+}
+
+.concrete-image {
+  height: 275px;
+
+  box-shadow: 8px -5px 8px grey;
+  cursor: none;
+}
