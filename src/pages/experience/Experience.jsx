@@ -7,7 +7,10 @@ import Navbar from '../Navbar';
 
 const Experience = () => {
 
-  const timelinePath = require('../../assets/Timeline.png');
+  const timelinePath = require("../../assets/Experience/Illustration_9.png");
+  const orangesPath = require("../../assets/Experience/Illustration_6.png");
+  const leftBottomFlowerPath = require("../../assets/Experience/Illustration_8.png");
+  const rightBottomFlowerPath = require("../../assets/Experience/Illustration_7.png");
 
   return (
     <div className="experience-page">
@@ -23,6 +26,20 @@ const Experience = () => {
         <img
           className="timeline"
           src={timelinePath}
+        />
+
+        <img
+          className="oranges"
+          src={orangesPath}
+        />
+
+        <img
+          className="left-bottom-flower"
+          src={leftBottomFlowerPath}
+        />
+        <img
+          className="right-bottom-flower"
+          src={rightBottomFlowerPath}
         />
         
       </div>

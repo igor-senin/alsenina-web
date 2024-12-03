@@ -10,43 +10,34 @@
   position: relative;
 }
 
-.concrete-img-1_2,
-.concrete-img-3,
-.concrete-img-4 {
-  /* position: absolute; */
-  /* height: 500px; */
-}
-
-.concrete-img-1_2 {
-  height: 800px;
-}
-
-.concrete-img-3 {
-  height: 800px;
-}
-
-.concrete-img-4 {
-  height: 800px;
-}
-
-.elements-1_2,
-.element-3,
-.element-4 {
+img {
   position: absolute;
-  height: 1000px;
+  height: 400px;
 }
 
-.element-1_2 {
+.img-1 {
+  left: 50px;
   top: 0;
-  left: 100px;
 }
 
-.element-3 {
+.img-2 {
+  right: 250px;
+  top: 0;
+}
+
+.img-3 {
+  height: 100px;
+  right: 350px;
+  top: 0;
+}
+
+.img-4 {
+  left: 50px;
   top: 600px;
-  left: 50px
 }
 
-.element-4 {
+.img-5 {
+  height: 250px;
   bottom: 0;
   right: 500px;
 }

@@ -11,33 +11,33 @@ for (let i = 1; i <= 12; ++i) {
 }
 
 const Animation = () => {
-  const path_1_2 = require('../../assets/Second_page_element1-2.png');
-  const path_3 = require('../../assets/Second_page_element3.png');
-  const path_4 = require('../../assets/Second_page_element4.png');
+  const path1 = require("../../assets/Projects/illustration_1.png");
+  const path2 = require("../../assets/Projects/illustration_2.png");
+  const path3 = require("../../assets/Projects/illustration_3.png");
+  const path4 = require("../../assets/Projects/illustration_4.png");
+  const path5 = require("../../assets/Projects/illustration_5.png");
 
   return (
-  <div className="animation-page">
-      <div className="elements-1_2">
-        <img className="concrete-img-1_2" src={path_1_2}/>
-      </div>
-      <div className="element-3">
-        <img className="concrete-img-3" src={path_3}/>
-      </div>
-      <div className="element-4">
-        <img className="concrete-img-4" src={path_4}/>
-      </div>
+  <main>
+    <div className="animation-page">
+        <img className="img-1" src={path1}/>
+        <img className="img-2" src={path2}/>
+        <img className="img-3" src={path3}/>
+        <img className="img-4" src={path4}/>
+        <img className="img-5" src={path5}/>
 
-      <div className="left-empty-space"/>
-      <div className="projects-list-part">
-        <div className="animation-header">
-          Проекты
+        <div className="left-empty-space"/>
+        <div className="projects-list-part">
+          <div className="animation-header">
+            Проекты
+          </div>
+          <div className="projects-list">
+            {imgPaths.map(path => <ClickableImage imgSrc={path} pathTo=""/>)}
+          </div>
         </div>
-        <div className="projects-list">
-          {imgPaths.map(path => <ClickableImage imgSrc={path} pathTo=""/>)}
-        </div>
-      </div>
-      <div className="right-empty-space"/>
-  </div>
+        <div className="right-empty-space"/>
+    </div>
+  </main>
   )
 };
 

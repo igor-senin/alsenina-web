@@ -42,3 +42,27 @@
 
 .empty-space {
 }
+
+.oranges {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  height: 120px;
+}
+
+.left-bottom-flower {
+  position: absolute;
+  bottom: 0;
+
+  height: 300px;
+  left: 0;
+}
+
+.right-bottom-flower {
+  position: absolute;
+  bottom: 0;
+
+  height: 300px;
+  right: 0;
+}

@@ -4,17 +4,21 @@
   
   transition: 0.5s;
 
+  cursor: none;
+
   margin: 10px;
 }
 
 .clickable-image-container:hover {
-  opacity: 0.8
+  opacity: 0.78;
+  cursor: none;
 }
 
-.clickable-image-container:active {
-  height: 300px;
-  width: 300px;
-}
+/* .clickable-image-container:active { */
+/*   height: 300px; */
+/*   width: 300px; */
+/*   cursor: none; */
+/* } */
 
 @keyframes image_animation {
   from { height: 375px; }
@@ -25,9 +29,5 @@
   height: 275px;
 
   box-shadow: 8px -5px 8px grey;
+  cursor: none;
 }
-
-/* .concrete-image:active { */
-/*   animation-name: image_animation; */
-/*   animation-duration: 0.3s; */
-/* } */

@@ -5,32 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>AlSenina</title>
     <style>
-      @keyframes cursor_anim {
-        0% { cursor: url('../src/assets/Cursor_final/cursor_0.png'); }
-        25% { cursor: url('../src/assets/Cursor_final/cursor_1.png'); }
-        50% { cursor: url('../src/assets/Cursor_final/cursor_2.png'); }
-        75% { cursor: url('../src/assets/Cursor_final/cursor_3.png'); }
-        100% { cursor: url('../src/assets/Cursor_final/cursor_4.png'); }
-      }
-
       html, body {
         height: 100%;
-        cursor: url('cursor_0.png') 20 10, auto;
         margin: 0;
-      }
-
-      html:active {
-        animation-name: cursor_anim;
-        animation-duration: 3s;
-      }
-      body:active {
-        animation-name: cursor_anim;
-        animation-duration: 3s;
+        overflow-x: hidden;
       }
     </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div class="cursor" id="cursor"></div>
     <div id="root"></div>
   </body>
 </html>
