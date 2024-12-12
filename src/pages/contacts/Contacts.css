@@ -1,0 +1,67 @@
+@import url('../../fonts.css');
+
+.contacts-page {
+  background-color: #fcf7ec;
+
+  display: grid;
+  grid-template-columns: 170px 2fr 3fr 170px;
+
+  padding-bottom: 300px;
+
+  font-family: 'NeueMachina-Ultrabold';
+  font-size: 75px;
+
+  height: 100%;
+
+  position: relative;
+}
+
+.portrait-container {
+  position: relative;
+
+  height: 950px;
+}
+
+.portrait-pic {
+  margin-top: 150px;
+
+  height: 90%;
+  
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+}
+
+.vines-pic {
+  position: absolute;
+
+  z-index: 10;
+
+  top: 0;
+  left: 0;
+
+  height: 300px;
+}
+
+.contacts {
+  z-index: 50;
+  margin-top: 100px;
+
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+
+  position: relative;
+}
+
+.contacts-text {
+  font-family: 'GeometriaMedium';
+  font-size: 35px;
+
+  position: absolute;
+  bottom: 30px;
+  right: 0;
+}
+
+.text-part {
+  text-align: right;
+}

@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'NeueMachina-Ultrabold';
+  src: url('../public/resources/Fonts/neue-machina-ultrabold.ttf');
+}
+
+@font-face {
+  font-family: 'GeometriaMedium';
+  src: url('../public/resources/Fonts/geometria-medium.otf');
+}

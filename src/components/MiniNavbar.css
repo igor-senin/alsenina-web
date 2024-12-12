@@ -1,0 +1,14 @@
+.mini-navbar {
+  position: absolute;
+  top: 50px;
+  right: 0px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  z-index: 300;
+
+  cursor: none;
+
+  /* border: 3px solid #73AD21; */
+}

@@ -8,6 +8,7 @@ const Goto = ({title, pathTo, fontSize}) => {
   return (
     <Link to={path} style={{
       textDecoration: 'none',
+      cursor: 'none',
     }}>
       <button
         className="goto"

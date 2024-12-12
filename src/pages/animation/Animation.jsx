@@ -1,6 +1,7 @@
 import React from "react";
 
 import ClickableImage from '../../components/ClickableImage';
+import MiniNavbar from '../../components/MiniNavbar';
 
 import './Animation.css';
 
@@ -20,6 +21,8 @@ const Animation = () => {
   return (
   <main>
     <div className="animation-page">
+        <MiniNavbar/>
+
         <img className="img-1" src={path1}/>
         <img className="img-2" src={path2}/>
         <img className="img-3" src={path3}/>

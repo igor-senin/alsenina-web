@@ -3,7 +3,7 @@ import React from "react";
 import './Experience.css';
 
 import Snail from '../Snail';
-import Navbar from '../Navbar';
+import MiniNavbar from '../../components/MiniNavbar';
 
 const Experience = () => {
 
@@ -14,37 +14,65 @@ const Experience = () => {
 
   return (
     <div className="experience-page">
-      <div className="empty-space"/>
-      <div>
-        <Navbar/>
-        <div className="experience-header">
-          Опыт
-        </div>
-        <div className="snail-container">
-          <Snail/>
-        </div>
-        <img
-          className="timeline"
-          src={timelinePath}
-        />
+    <MiniNavbar/>
+    <div className="empty-space"/>
 
-        <img
-          className="oranges"
-          src={orangesPath}
-        />
-
-        <img
-          className="left-bottom-flower"
-          src={leftBottomFlowerPath}
-        />
-        <img
-          className="right-bottom-flower"
-          src={rightBottomFlowerPath}
-        />
-        
+    <div className="experience-page-main-part">
+      <div className="experience-header">
+        Опыт
+      </div>
+      <div className="snail-container">
+        <Snail/>
+      </div>
+      <div className="timeline-container">
+      <img
+        className="timeline-pic"
+        src={timelinePath}
+      />
       </div>
 
-      <div className="empty-space"/>
+      <div className="main-text">
+      <div className="title">
+      Образование
+      </div>
+      <div className="some-text">
+       1. 2018-2022 бакалавриат Art and Design School HSE, анимация и иллюстрация <br/>
+       2. 2023-2025 неоконченная магистратура Art and Design School HSE, анимация <br/>
+       3. 2024-2025 UX/UI, Bang Bang Education <br/>
+       </div>
+
+      <div className="title">
+      Навыки
+      </div>
+      <div className="some-text">
+      2D анимация, иллюстрация, комиксы, режиссура, графический дизайн, игровой дизайн, продюсирование, преподавание
+     </div>
+
+      <div className="title">
+      Программы
+      </div>
+      <div className="some-text">
+      Adobe Photoshop, Adobe Illustrator, Adobe Animate, After Effects, Toon Boom Harmony, Procreate, Rough Animation, Readymag, Maya, Ableton Live, Figma
+      </div>
+      </div>
+
+      <div className="oranges-container">
+      <img
+        className="oranges-pic"
+        src={orangesPath}
+      />
+      </div>
+      <img
+        className="left-bottom-flower"
+        src={leftBottomFlowerPath}
+      />
+      <img
+        className="right-bottom-flower"
+        src={rightBottomFlowerPath}
+      />
+
+    </div>
+    <div className="empty-space"/>
     </div>
   )
 };
