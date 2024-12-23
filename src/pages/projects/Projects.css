@@ -10,33 +10,36 @@
   position: relative;
 }
 
-img {
+.img-1 {
   position: absolute;
   height: 400px;
-}
-
-.img-1 {
   left: 50px;
   top: 0;
 }
 
 .img-2 {
+  position: absolute;
+  height: 400px;
   right: 250px;
   top: 0;
 }
 
 .img-3 {
+  position: absolute;
   height: 100px;
   right: 350px;
   top: 0;
 }
 
 .img-4 {
+  position: absolute;
+  height: 400px;
   left: 50px;
   top: 600px;
 }
 
 .img-5 {
+  position: absolute;
   height: 250px;
   bottom: 0;
   right: 500px;

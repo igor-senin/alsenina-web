@@ -6,6 +6,15 @@ import "./Cursor";
 
 import "./App.css";
 
+// import Flowwow from "./pages/projects/subpages/Flowwow";
+// const App = () => {
+//   return (
+//     <div className="App">
+//       <Flowwow/>
+//     </div>
+//   );
+// };
+
 const App = () => {
   return (
     <div className="App">

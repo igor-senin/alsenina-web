@@ -1,0 +1,59 @@
+@import url('../../../fonts.css');
+
+.flowwow-page {
+  position: relative;
+  background-color: #fcf7ec;
+  padding-left: 0;
+  padding-bottom: 300px;
+  padding-top: 100px;
+
+  display: grid;
+  grid-template-columns: 200px 1fr 200px;
+
+  height: auto;
+}
+
+.flowwow-header {
+  height: 40px;
+  padding: 30px;
+  padding-left: 0px;
+
+  font-family: 'NeueMachina-Ultrabold';
+  font-size: 50px;
+
+  margin-bottom: 50px;
+}
+
+.video-and-text {
+  display: grid;
+
+  height: 50%;
+
+  font-family: 'GeometriaMedium';
+  font-size: 27px;
+}
+
+.video-first {
+  grid-template-columns: 3fr 2fr;
+
+  /* background-color: blue; */
+}
+
+.text-first {
+  grid-template-columns: 2fr 3fr;
+
+  /* background-color: red; */
+}
+
+.main-part {
+}
+
+.flower-1 {
+  position: absolute;
+
+  height: 200px;
+
+  bottom: 0;
+  right: 0;
+}
+

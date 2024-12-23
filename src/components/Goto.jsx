@@ -1,15 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router";
 
 import './Goto.css';
 
 const Goto = ({title, pathTo, fontSize}) => {
   const path = `/${pathTo}`;
   return (
-    <Link to={path} style={{
+    <NavLink to={path} style={{
       textDecoration: 'none',
       cursor: 'none',
-    }}>
+    }} end>
       <button
         className="goto"
         style={{
@@ -18,7 +18,7 @@ const Goto = ({title, pathTo, fontSize}) => {
       >
         {title}
       </button>
-    </Link>
+    </NavLink>
   );
 };
 

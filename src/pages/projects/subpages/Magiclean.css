@@ -1,0 +1,49 @@
+@import url('../../../fonts.css');
+
+.page {
+  position: relative;
+  background-color: #fcf7ec;
+  padding-left: 0;
+  padding-bottom: 100px;
+  padding-top: 100px;
+
+  display: grid;
+  grid-template-columns: 200px 1fr 200px;
+
+  height: auto;
+}
+
+.page-header {
+  height: 40px;
+  padding: 30px;
+  padding-left: 0px;
+
+  font-family: 'NeueMachina-Ultrabold';
+  font-size: 50px;
+
+  margin-bottom: 50px;
+}
+
+.video-and-text {
+  display: grid;
+
+  height: 50%;
+
+  font-family: 'GeometriaMedium';
+  font-size: 27px;
+}
+
+.main-part {
+  font-family: 'GeometriaMedium';
+  font-size: 27px;
+}
+
+.flower-1 {
+  position: absolute;
+
+  height: 200px;
+
+  bottom: 0;
+  right: 0;
+}
+

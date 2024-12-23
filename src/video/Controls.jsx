@@ -11,10 +11,10 @@ import {
 import "./Controls.css";
 
 const IconButton = styled("div")({
-  color: "#fff",
+  color: "rgba(0, 0, 0, 0.8)",
   padding: "0 10px",
   "&:hover": {
-    color: "orange",
+    color: "rgba(254, 120, 189, 0.8)",
     transition: "0.3s",
   },
 });
@@ -39,7 +39,7 @@ const VolumeSlider = ({value, onChange, onChangeCommitted}) => {
           value={value}
           onChange={onChange}
           onChangeCommitted={onChangeCommitted}
-          style={{ cursor: "none", }}
+          style={{ cursor: "none", color: "rgba(254, 120, 189, 1.0)" }}
         />
       </Stack>
     </Box>
@@ -59,7 +59,7 @@ const TimeSlider = ({value, onSeek, onSeekMouseUp}) => {
           value={value * 100}
           onChange={onSeek}
           onChangeCommitted={onSeekMouseUp}
-          style={{ cursor: "none", }}
+          style={{ cursor: "none", color: "rgba(254, 120, 189, 1.0)" }}
         />
       </Stack>
     </Box>

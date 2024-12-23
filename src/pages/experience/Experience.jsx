@@ -36,22 +36,27 @@ const Experience = () => {
       Образование
       </div>
       <div className="some-text">
+      <div className="text-block">
        1. 2018-2022 бакалавриат Art and Design School HSE, анимация и иллюстрация <br/>
        2. 2023-2025 неоконченная магистратура Art and Design School HSE, анимация <br/>
        3. 2024-2025 UX/UI, Bang Bang Education <br/>
+       </div>
        </div>
 
       <div className="title">
       Навыки
       </div>
       <div className="some-text">
+      <div className="text-block">
       2D анимация, иллюстрация, комиксы, режиссура, графический дизайн, игровой дизайн, продюсирование, преподавание
+      </div>
      </div>
 
       <div className="title">
       Программы
       </div>
       <div className="some-text">
+      <div className="text-block">
       Adobe Photoshop, Adobe Illustrator, Adobe Animate, After Effects, Toon Boom Harmony, Procreate, Rough Animation, Readymag, Maya, Ableton Live, Figma
       </div>
       </div>
@@ -62,6 +67,9 @@ const Experience = () => {
         src={orangesPath}
       />
       </div>
+
+      </div>
+
       <img
         className="left-bottom-flower"
         src={leftBottomFlowerPath}

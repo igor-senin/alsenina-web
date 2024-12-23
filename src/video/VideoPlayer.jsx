@@ -10,7 +10,7 @@ import './VideoPlayer.css';
 
 let idleDarkenCount = 0;
 
-const VideoPlayer = ({videoSrc, style}) => {
+const VideoPlayer = ({videoSrc, width, height}) => {
   const videoPlayerRef = useRef(null);
   const controlsRef = useRef(null);
 
@@ -51,7 +51,7 @@ const VideoPlayer = ({videoSrc, style}) => {
     if (idleDarkenCount > 1) {
       idleDarkenCount = 0;
       controlsRef.current.style.visibility = "hidden";
-    } else if (controlsRef.current.style.visibility == "visible") {
+    } else if (controlsRef.current.style.visibility === "visible") {
       idleDarkenCount += 1;
     }
 
@@ -109,10 +109,10 @@ const VideoPlayer = ({videoSrc, style}) => {
   // TODO: между ReactPlayer и Controls можно
   // добавить что-то типа
   // { buffer && <p> Loading... </p> }
+
   return (
     <div
       className="player-container"
-      style={style}
     >
       <div className="player-wrapper" onMouseMove={mouseMoveHandler}>
         <ReactPlayer
@@ -127,6 +127,9 @@ const VideoPlayer = ({videoSrc, style}) => {
           onBufferEnd={bufferEndHandler}
 
           loop={true}
+
+          width={width ? width : "auto"}
+          height={height ? height : "auto"}
         />
 
         <Controls 

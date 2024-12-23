@@ -3,15 +3,10 @@ import React from "react";
 import ClickableImage from '../../components/ClickableImage';
 import MiniNavbar from '../../components/MiniNavbar';
 
-import './Animation.css';
+import './Projects.css';
 
 
-const imgPaths = [];
-for (let i = 1; i <= 12; ++i) {
-  imgPaths.push(require(`../../assets/Previews/preview_${i}.png`));
-}
-
-const Animation = () => {
+const Projects = ({previews, urls}) => {
   const path1 = require("../../assets/Projects/illustration_1.png");
   const path2 = require("../../assets/Projects/illustration_2.png");
   const path3 = require("../../assets/Projects/illustration_3.png");
@@ -35,7 +30,12 @@ const Animation = () => {
             Проекты
           </div>
           <div className="projects-list">
-            {imgPaths.map(path => <ClickableImage imgSrc={path} pathTo=""/>)}
+            {urls.map((url, idx) => 
+              <ClickableImage
+                imgSrc={previews[idx]}
+                pathTo={url}
+              />
+            )}
           </div>
         </div>
         <div className="right-empty-space"/>
@@ -44,4 +44,4 @@ const Animation = () => {
   )
 };
 
-export default Animation;
+export default Projects;

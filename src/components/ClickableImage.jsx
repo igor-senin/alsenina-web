@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router";
 
 import { styled } from '@mui/system';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
@@ -14,16 +14,16 @@ const ClickableImage = ({pathTo, imgSrc}) => {
     left: "45%",
   });
 
-  const navigate = useNavigate();
+  let navigate = useNavigate();
 
   return (
     <div
       className="clickable-image-container"
+      onClick={() => navigate(pathTo)}
     >
       <img
         className="concrete-image"
         src={imgSrc}
-        onClick={() => navigate('/home')}
       />
 
       <div className="chevron-container">
