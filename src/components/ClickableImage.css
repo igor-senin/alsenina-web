@@ -1,17 +1,35 @@
 .clickable-image-container {
   height: 275px;
-  width: 275px;
+  width: 340px;
   
   transition: 0.5s;
 
   cursor: none;
 
   margin: 10px;
+
+  position: relative;
 }
 
 .clickable-image-container:hover {
   opacity: 0.78;
   cursor: none;
+}
+
+.chevron-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  transition: 0.5s;
+  opacity: 0.0;
+}
+
+.chevron-container:hover {
+  opacity: 1.0;
 }
 
 /* .clickable-image-container:active { */
